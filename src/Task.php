@@ -115,7 +115,7 @@ class Task extends TotemModel
      */
     public function getAverageRuntimeAttribute()
     {
-        return $this->results()->avg('duration') ?? 0.00;
+        return $this->results->avg('duration') ?? 0.00;
     }
 
     /**
